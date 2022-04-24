@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "notetaker_11",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blairyoung15/noteTaker_11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blairyoung15/noteTaker_11/issues"
+  },
+  "homepage": "https://github.com/blairyoung15/noteTaker_11#readme"
 }
