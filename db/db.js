@@ -1,6 +1,6 @@
 const fs = require("fs");
 const util = require("util");
-const uuid = require("uuid");
+const uuid = require("uuid").v4;
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -16,10 +16,6 @@ class DB {
 
     addNote(note) {
         const { title, text } = note
-
-        if (!title || !text) {
-            throw new Error("Please enter a title and text")
-        }
 
         const newNote = { title, text, id: uuid() }
 
